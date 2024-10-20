@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toggle Text</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin-top: 50px;
+}
+#textBlock {
+display: none;
+margin: 20px;
+font-size: 1.2em;
+}
+</style>
+</head>
+<body>
+
+<h2>Toggle Text Visibility</h2>
+<button onclick="toggleText()">Text Hide & Show </button>
+<p id="textShow">The Text will be hide and show</p>
+
+<script>
+    let textShow = document.getElementById('textShow');
+    function toggleText() {
+        if (textShow.style.display == 'block'){
+            textShow.style.display = 'none';
+        }else{
+            textShow.style.display = 'block';
+
+        }
+
+    }
+</script>
+
+
+
+
+</body>
+</html>

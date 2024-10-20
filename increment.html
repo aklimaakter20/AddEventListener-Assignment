@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Counter Button</title>
+<style>
+body {
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+margin-top: 50px;
+}
+#counter {
+font-size: 2em;
+margin: 16px;
+}
+#btn{
+    padding: 8px 15px;
+    background-color: green;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    border-radius: 6px;
+}
+#btn2{
+    padding: 8px 15px;
+    background-color: brown;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    border-radius: 6px;
+    margin-left: 15px;
+}
+</style>
+</head>
+<body>
+
+    <h3>Increment Number & Decrement Number </h3><br><br>
+    <button id="btn" onclick="incrementNumber()">Click Me</button>
+    <button id="btn2" onclick="decrementNumber()">Click Me</button>
+
+    <div id="counter">0</div>
+    <script>
+        let count = 0;
+        function incrementNumber(){
+            count++;
+            document.getElementById('counter').innerText = count;
+        }
+        function decrementNumber(){
+            count--;
+            document.getElementById('counter').innerText = count;
+        }
+    </script>
+</body>
+</html>
